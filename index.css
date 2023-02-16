@@ -12,5 +12,28 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-	background: #800000
+	background: rgb(128, 0, 0)
+}
+
+body {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.container{
+	border: 5px solid black;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container>div{
+	align-items: center;
+	padding: 10px;
+     display: flex;
+	 justify-content:flex-end
+}
+ 
+h3{
+	display: flex;
+	letter-spacing: 2px;
+	width: 820px;
 }

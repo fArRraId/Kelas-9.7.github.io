@@ -130,15 +130,6 @@ div.PlaceHolder{
 	}
 }
 
-@media screen and (max-width: 813px){
-div.PlaceHolder{
-	position: absolute;
-	font-size: 60px;
-	bottom: 245px;
-	top: 200px;
-	left: 120px;
-	right: 129px;
-}}
 
 /* Ukuran HP */
 @media screen and (max-width:576px) {
@@ -168,13 +159,3 @@ div.PlaceHolder{
 	}
 }
 
-@media screen and (max-width:576px){
-div.PlaceHolder{
-	position: absolute;
-	font-size: 60px;
-	right: 65px;
-	bottom: 245px;
-	top: 200px;
-	left: 60px;
-
-}}

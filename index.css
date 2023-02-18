@@ -18,7 +18,7 @@ body {
 nav .Title{
 	font-family: 'Source Code Pro', monospace;
 	letter-spacing: 1px;
-
+	
 }
 
 *{
@@ -51,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	color: rgb(160, 160, 160);
+	color: rgb(82, 82, 82);
 }
 
 /* Burger Menu */
@@ -84,6 +84,15 @@ nav ul li a:hover{
 	transition: all 1s;
 }
 
+div.PlaceHolder{
+	position: absolute;
+	font-size: 60px;
+	right: 475px;
+	top: 215px;
+	border-style:solid;
+	border-width: 6px;
+	padding: 13px;
+}
 /* Burger Animation */
 .menu-toggle span:nth-child(2){
 	transform-origin: 0 0;
@@ -121,6 +130,16 @@ nav ul li a:hover{
 	}
 }
 
+@media screen and (max-width: 813px){
+div.PlaceHolder{
+	position: absolute;
+	font-size: 60px;
+	bottom: 245px;
+	top: 200px;
+	left: 120px;
+	right: 129px;
+}}
+
 /* Ukuran HP */
 @media screen and (max-width:576px) {
 	.menu-toggle{
@@ -131,15 +150,16 @@ nav ul li a:hover{
 		right: 0;
 		top: 0;
 		width: 50%;
-		height: 100vh;
+		height: 80vh;
 		justify-content: space-evenly;
-		flex-direction: column;
+		flex-direction:column;
 		align-items: center;
 		background-color: rgb(255, 255, 255);
 		z-index: -1;
 		transform: right(-100);
 		transition: all 0.5s;
 		opacity: 0;
+	
 	}
 
 	nav ul.slide{
@@ -148,6 +168,13 @@ nav ul li a:hover{
 	}
 }
 
-H1{
-	right:100px
-}
+@media screen and (max-width:576px){
+div.PlaceHolder{
+	position: absolute;
+	font-size: 60px;
+	right: 65px;
+	bottom: 245px;
+	top: 200px;
+	left: 60px;
+
+}}

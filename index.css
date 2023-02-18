@@ -124,7 +124,7 @@ div.PlaceHolder{
 
 /* Ukuran tablet */
 
-@media screen and (max-width: 813px) {
+@media screen and (max-width: 767px) {
 	nav ul {
 		width:70%;
 	}
@@ -132,7 +132,7 @@ div.PlaceHolder{
 
 
 /* Ukuran HP */
-@media screen and (max-width:576px) {
+@media screen and (max-width:479px) {
 	.menu-toggle{
 		display: flex;
 	}

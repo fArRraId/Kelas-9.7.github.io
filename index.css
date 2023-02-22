@@ -133,7 +133,7 @@ div.PlaceHolder{
 
 
 /* Ukuran HP */
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
 	.menu-toggle{
 		display: flex;
 	}
@@ -179,15 +179,75 @@ div img{
 
 
  h1{
-	text-decoration: none;
 	font-family: sans-serif;
 	line-height: 3;
 	font-size: 50px;
 	display:flex;
-	margin-left: 570px;
+	margin-left: 510px;
 	color: black;
+}
+
+a:hover{
+	color: rgb(77, 76, 76);
 }
 
 a{
 	text-decoration: none;
+	color: black;
+
+
+}
+
+/* Memory Mobile */
+
+@media screen and (max-width:480px){
+	h1{
+		max-width: 480px;
+		margin-left: 4px;
+		max-height: 270px;
+		font-size: 30px;
+		text-decoration: none;
+		font-family: sans-serif;
+		color: black;
+		border: solid black 3px;
+		margin-right: 170px;
+		line-height: 2;
+		padding-left: 6px;
+		margin-bottom: 5px;
+		
+
+	}
+	
+	h1:hover{
+		color: (63,63,63);
+	}
+
+
+	div img{
+		max-width: 480px;
+		max-height: 270px;
+		padding-left: 3px;
+		padding-right: 5px;
+		max-inline-size: 96%;
+		block-size: auto;
+	}
+}
+
+/* Memory Tablet */
+@media screen and (max-width:768px){
+	
+	h1:hover{
+		color: rgb(63, 63, 63);
+	}
+
+
+	div img{
+		max-width: 768px;
+		max-height: 457px;
+		padding-left: 3px;
+		padding-bottom: 4px;
+		padding-right: 5px;
+		max-inline-size: 96%;
+		block-size: auto;
+	}
 }

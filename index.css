@@ -166,7 +166,7 @@ h4 a{
 }
 
 /* Image */
-
+  
 
 div img{
 	display: flex;
@@ -175,20 +175,23 @@ div img{
 	padding: 3px;
 	width: 700px;
 	height:400px;
+	border: solid black;
+	margin-bottom: 5px;
 }
 
 
  h1{
 	font-family: sans-serif;
-	line-height: 3;
+	line-height: 1.5;
 	font-size: 50px;
 	display:flex;
-	margin-left: 510px;
+	margin-right: 130vh;
+	margin-left: 46vh;
 	color: black;
-}
-
-a:hover{
-	color: rgb(77, 76, 76);
+	margin-bottom: 5vh;
+	padding: 7px;
+	position: relative;
+	top: 3vh;
 }
 
 a{
@@ -200,36 +203,20 @@ a{
 
 /* Memory Mobile */
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) and (min-width:320px){
 	h1{
-		max-width: 480px;
-		margin-left: 7px;
-		max-height: 270px;
+		margin-left: auto;
 		font-size: 30px;
 		text-decoration: none;
 		font-family: sans-serif;
-		color: black;
-		border: solid black 2.5px;
-		margin-right: 170px;
+		box-shadow: 0 0 0 1px black;
+		margin-right: 38vmax;
 		line-height: 1.5;
 		padding-left: 8px;
-		margin-top: 10px;
-		
+		display: flex;
+		position: relative; top: 5px; left:8px;
+	}	
 
-	}
-	
-	h1:hover{
-		color: (63,63,63);
-	}
-
-
-	div img{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 95%;
-		padding-top: 4px;
-	}
 }
 
 /* Memory Tablet */

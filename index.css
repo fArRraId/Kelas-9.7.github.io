@@ -168,15 +168,14 @@ h4 a{
 /* Image */
   
 
-div img{
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 3px;
-	width: 700px;
-	height:400px;
-	border: solid black;
-	margin-bottom: 5px;
+img{
+	width: 100%;
+	border-radius: 4px;	
+	padding-top: 5px;
+}
+
+.box{
+	padding: 5px;
 }
 
 
@@ -189,9 +188,7 @@ div img{
 	margin-left: 46vh;
 	color: black;
 	margin-bottom: 5vh;
-	padding: 7px;
-	position: relative;
-	top: 3vh;
+	padding: 7px;		
 }
 
 a{
@@ -203,37 +200,31 @@ a{
 
 /* Memory Mobile */
 
-@media screen and (max-width:480px) and (min-width:320px){
+@media screen and (max-width:600px) and (min-width:320px){
 	h1{
-		margin-left: auto;
 		font-size: 30px;
 		text-decoration: none;
-		font-family: sans-serif;
-		box-shadow: 0 0 0 1px black;
-		margin-right: 38vmax;
-		line-height: 1.5;
-		padding-left: 8px;
-		display: flex;
-		position: relative; top: 5px; left:8px;
+		font-family: times;
+		display: inline-flex;	
+		margin: auto;
+		padding-left: 9px;
 	}	
-
 }
 
-/* Memory Tablet */
-@media screen and (max-width:768px){
-	
-	h1:hover{
-		color: rgb(63, 63, 63);
-	}
+img{
+	background-color: rgb(31, 31, 31);
+	padding: 3px;
+	padding-right: 4px;
+}
 
+body{
+	padding: 5px;
+}
 
-	div img{
-		max-width: 768px;
-		max-height: 457px;
-		padding-left: 3px;
-		padding-bottom: 4px;
-		padding-right: 5px;
-		max-inline-size: 96%;
-		block-size: auto;
-	}
+.Title{
+	display: flex;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 20px;
 }

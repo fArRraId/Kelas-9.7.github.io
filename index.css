@@ -3,7 +3,7 @@ body {
 }
 
 ::-webkit-scrollbar{
-	width: 15px;
+	width: 10px;
 
 }
 
@@ -17,7 +17,7 @@ body {
 
 nav .Title{
 	font-family: 'Source Code Pro', monospace;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	
 }
 
@@ -34,8 +34,8 @@ nav{
 	/*padding: 10px 0;*/
 	height: 39px;
 	align-items: center;
-	font-family: sans-serif;
-	font-size: 110%;
+	font-family:sans-serif;
+	font-size: 120%;
 }
 
 nav ul{
@@ -46,7 +46,7 @@ nav ul{
 }
 
 nav ul li a{
-	color: black;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	font-family: 'Roboto Slab', serif;
 }
@@ -125,7 +125,7 @@ div.PlaceHolder{
 
 /* Ukuran tablet */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 	nav ul {
 		width:70%;
 	}
@@ -142,12 +142,12 @@ div.PlaceHolder{
 		right: 0;
 		top: 0;
 		width: 50%;
-		height: 80vh;
+		height: 100vh;
 		justify-content: space-evenly;
 		flex-direction:column;
 		align-items: center;
 		background-color: rgb(255, 255, 255);
-		z-index: -1;
+		z-index: 1;
 		transform: right(-100);
 		transition: all 0.5s;
 		opacity: 0;
@@ -165,27 +165,38 @@ h4 a{
 	text-decoration: none;
 }
 
+h4 a:hover{
+	color:rgb(163, 163, 163);
+}
+
+
+
+
 /* Image */
-  
 
-img{
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 30vw );
+	grid-gap: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.foto{
 	width: 100%;
-	border-radius: 4px;	
-	padding-top: 5px;
+	height: 98%;
+	object-fit:cover;
+	border-radius: 2px;
 }
-
-.box{
-	padding: 5px;
-}
-
 
  h1{
-	font-family: sans-serif;
+	font-family: times;
 	line-height: 1.5;
-	font-size: 50px;
+	font-size: 210%;
 	display:flex;
-	margin-right: 130vh;
-	margin-left: 46vh;
+	margin-right: auto;
+	margin-left: auto;
 	color: black;
 	margin-bottom: 5vh;
 	padding: 7px;		
@@ -194,36 +205,4 @@ img{
 a{
 	text-decoration: none;
 	color: black;
-
-
-}
-
-/* Memory Mobile */
-
-@media screen and (max-width:600px) and (min-width:320px){
-	h1{
-		font-size: 30px;
-		text-decoration: none;
-		font-family: times;
-		display: inline-flex;	
-		margin: auto;
-		padding-left: 9px;
-	}	
-}
-
-img{
-	background-color: rgb(31, 31, 31);
-	padding: 2px;
-}
-
-body{
-	padding: 5px;
-}
-
-.Title{
-	display: flex;
-	margin-right: auto;
-	padding-left: 20px;
-	padding-top: 10px;
-	font-size: 20px;
 }
